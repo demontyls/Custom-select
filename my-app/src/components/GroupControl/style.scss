@@ -1,0 +1,40 @@
+.group-control {
+  display: flex;
+  flex-direction: column;
+
+  position: relative;
+}
+
+.input-wrapper {
+  display: flex;
+  align-items: center;
+  height: 32px;
+
+  position: relative;
+
+  input {
+    padding-right: 48px;
+    position: absolute;
+  }
+}
+
+input.form-control.is-invalid,
+.was-validated .form-control:invalid {
+  padding-right: 48px;
+  background-position: right 24px center;
+}
+
+.menu {
+  display: flex;
+  flex-direction: column;
+  background: white;
+  width: 100%;
+  max-height: 300px;
+  padding: 8px 0;
+  border-radius: 4px;
+  overflow: auto;
+
+  position: absolute;
+  top: 40px;
+  z-index: 2;
+}

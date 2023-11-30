@@ -1,0 +1,22 @@
+.control-group {
+  display: flex;
+  gap: 8px;
+  margin: 0 8px;
+
+  position: absolute;
+
+  right: 0;
+
+  .fa-chevron-down {
+    &[data-expanded="true"] {
+      transform: rotate(180deg);
+    }
+  }
+
+  .icon {
+    &:hover {
+      color: #0d6efd;
+      cursor: pointer;
+    }
+  }
+}
